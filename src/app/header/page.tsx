@@ -1,27 +1,35 @@
-// components/Header.js
-
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import logo from './forever.png';
 
 const Header = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
   return (
-    <header className="bg-gray-800 text-white py-4">
+    <header className="bg-purple-300 text-white py-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/logo.svg" alt="Logo" className="h-8 mr-4" />
-          <h1 className="text-lg font-bold">PromiseTracker</h1>
+          <img src={logo.src} alt="Logo" className="h-8 mr-4" />
+          <h1 className="text-lg font-bold text-red-600 font-cursive">Forever</h1>
         </div>
-        <div className="flex items-center">
-          <div className="mr-4">
-            <p className="font-semibold">Account</p>
-          </div>
-          <div className="mr-4">
-              <a href="">Shared with</a>
-              <a href="/my-promises" className="mr-2 hover:underline">My Promises</a>
-              <a href="/shared-with-me" className="mr-2 hover:underline">Shared With Me</a>       
-            <button className="hover:underline">Logout</button>
-          </div>
-
+        <div className="relative">
+          <button onClick={toggleDropdown} className="focus:outline-none mr-4">
+            Account
+          </button>
+          {dropdownOpen && (
+            <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg">
+              <div className="py-1">
+                <a href="#/shared" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Shared</a>
+                <a href="#/my-promises" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Promises</a>
+                <button className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-200">Logout</button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </header>

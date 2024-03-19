@@ -32,14 +32,14 @@ const page = () => {
       {/* <Head>
         <title>PromiseTracker</title>
       </Head> */}
-      <header className="text-center mb-8">
+      {/* <header className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">PromiseTracker</h1>
-        <p className="text-lg text-gray-600">Keep track of your promises together!</p>
-      </header>
+        <p className="text-lg text-gray-600">Keep your story alive!</p>
+      </header> */}
       <div className="max-w-md w-full  shadow-md rounded-lg p-6">
 
       <section>
-          <h2 className="text-2xl text-gray-800 font-bold mb-4">Explore Promises</h2>
+          <h2 className="text-2xl text-purple-300 font-bold mb-4">Delve into the World of Promises</h2>
           <ul>
             {promises.map(promise => (
               <li key={promise.id} className="bg-gray-200 rounded-md p-4 mb-2">
