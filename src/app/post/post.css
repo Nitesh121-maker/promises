@@ -1,0 +1,37 @@
+.color-picker input,
+.background-color-picker input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.color-picker {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+}
+
+.background-color-picker {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+}
+
+  
+  /* .color-picker input[type="color"] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .color-picker-label {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #666;
+  } */
+  
