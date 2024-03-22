@@ -2,3 +2,6 @@
     height: 48px; /* Adjust the height as needed */
     width: 48px; /* Adjust the width as needed */
   }
+  .font-proxima-nova {
+    font-family: "Proxima Nova", "Neue Helvetica", sans-serif;
+}

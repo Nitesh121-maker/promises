@@ -25,7 +25,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo.src} alt="Logo" className="logo-img h-15 w-15 mr-4" />
-          <h1 className="text-lg font-bold text-red-600 font-cursive">Forever</h1>
+          <h1 className="text-lg font-bold text-red-600 font-proxima-nova">Forever</h1>
         </div>
         <div className="relative">
         <button

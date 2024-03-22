@@ -1,3 +1,11 @@
+.color-picker,
+.background-color-picker {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    border-radius: 50%; /* Make it round */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
 .color-picker input,
 .background-color-picker input {
     width: 100%;
@@ -7,31 +15,32 @@
 }
 
 .color-picker {
-    width: 40px; /* Adjust width as needed */
-    height: 40px; /* Adjust height as needed */
+    /* margin-right: 12px; Add some margin */
+    margin-right: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .background-color-picker {
-    width: 40px; /* Adjust width as needed */
-    height: 40px; /* Adjust height as needed */
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-  
-  /* .color-picker input[type="color"] {
-    appearance: none;
-    width: 30px;
-    height: 30px;
+.share-button {
+    background-image: linear-gradient(to right, #3498db, #FFE6E6);
+    color: white;
+    margin-top: 10px;
     border: none;
-    border-radius: 50%;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-  .color-picker-label {
-    position: absolute;
-    top: calc(100% + 4px);
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    color: #666;
-  } */
+  .share-button:hover {
+    background-image: linear-gradient(to right, #2980b9, #dccad1);
+  }
   

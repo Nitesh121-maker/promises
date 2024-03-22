@@ -36,7 +36,7 @@ const page = () => {
   return (
     <>
      <Header/>
-     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center" >
       <button
         onClick={post}
         className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-3 rounded-full shadow-md hover:from-purple-600 hover:to-purple-700 hover:shadow-lg transition duration-300 ease-in-out mb-4"
